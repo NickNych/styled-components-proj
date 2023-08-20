@@ -18,4 +18,27 @@ function App() {
 
 export default App;
 
-
+const StyledBtn = styled.button`
+  border: none;
+  background-color: #fb3f78;
+  padding: 10px 20px;
+  color: snow;
+  font-size: 2rem;
+  font-weight: bold;
+`
+const Link = styled.a`
+  color: #003dfd;
+  font-size: 2rem;
+  font-weight: bold;
+`
+const SuperBtn= styled(StyledBtn)`
+  border-radius: 5px;
+  background-color: #ffe869;
+  color: #363636;
+`
+const Box = styled.div`
+height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`

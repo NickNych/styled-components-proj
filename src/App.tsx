@@ -6,13 +6,13 @@ import styled from "styled-components";
 function App() {
   return (
     <div className="App">
-      <menu>
+      <Menu>
         <ul>
-          <li><a href="#">menu item 1</a></li>
-          <li><a href="#">menu item 2</a></li>
-          <li><a href="#">menu item 3</a></li>
+          <li><a href="">menu item 1</a></li>
+          <li><a href="">menu item 2</a></li>
+          <li><a href="">menu item 3</a></li>
         </ul>
-      </menu>
+      </Menu>
 
       <Box>
     <StyledBtn as={Link} href={"#"}>LinkComponent</StyledBtn>
@@ -60,4 +60,15 @@ height: 100vh;
     cursor: zoom-in;
   }
 `
-const Menu = styled.nav
+export const Menu = styled.nav`
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li > a{
+    color: green;
+    display: flex;
+  }
+}
+`

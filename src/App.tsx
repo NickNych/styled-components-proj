@@ -1,16 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import styled from "styled-components";
+import {StyledBtn, SuperButton} from "./Components/StyledElements/Button";
+import {Link} from "./Components/StyledElements/Link";
+import {Menu} from "./Components/StyledElements/Menu";
 
 function App() {
   return (
     <div className="App">
       <Menu>
         <ul>
-          <li><a href="">menu item 1</a></li>
-          <li><a href="">menu item 2</a></li>
-          <li><a href="">menu item 3</a></li>
+          <li><a href="https://uk.javascript.info/">menu item 1</a></li>
+          <li><a href="https://uk.javascript.info/">menu item 2</a></li>
+          <li><a href="https://uk.javascript.info/">menu item 3</a></li>
         </ul>
       </Menu>
 
@@ -26,28 +28,6 @@ function App() {
 
 export default App;
 
-
-
-const StyledBtn = styled.button`
-  border: none;
-  background-color: #fb3f78;
-  padding: 10px 20px;
-  color: snow;
-  font-size: 2rem;
-  font-weight: bold;
-`
-const Link = styled.a`
-  color: #003dfd;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: transparent;
-  padding: 0;
-`
-const SuperButton= styled(StyledBtn)`
-  border-radius: 5px;
-  background-color: #ffe869;
-  color: #363636;
-`
 const Box = styled.div`
 height: 100vh;
   display: flex;
@@ -59,16 +39,10 @@ height: 100vh;
   ${Link}{
     cursor: zoom-in;
   }
-`
-export const Menu = styled.nav`
-ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
   
-  li > a{
-    color: green;
-    display: flex;
-  }
+@media screen and (max-width: 800px){
+  flex-direction: column;
 }
 `
+
+

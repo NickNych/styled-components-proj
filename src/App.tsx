@@ -9,10 +9,9 @@ function App() {
         <div className="App">
 
             <Box>
-                {/*<StyledBtn color="green" fontSize={"20px"}>hello</StyledBtn>*/}
-                {/*<StyledBtn color="red">hello</StyledBtn>*/}
-                <StyledBtn primary>hello</StyledBtn>
-                <StyledBtn outline>hello</StyledBtn>
+                <StyledBtn color={'red'}>hello</StyledBtn>
+                <StyledBtn>hello</StyledBtn>
+                {/*<input type="range"></input>*/}
             </Box>
         </div>
     );
@@ -25,6 +24,7 @@ const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 
   button {
     cursor: pointer;

@@ -9,6 +9,7 @@ function App() {
         <div className="App">
 
             <Box>
+                <StyledBtn color={'green'}>hello</StyledBtn>
                 <StyledBtn color={'red'}>hello</StyledBtn>
                 <StyledBtn>hello</StyledBtn>
                 {/*<input type="range"></input>*/}

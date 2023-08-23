@@ -6,6 +6,7 @@ export const StyledBtn = styled.button`
   border: none;
   border-radius: 10px;
   background-color: ${props=> props.color || "#fb3788"};
+  //background-color: #fb3788;
   padding: 10px 20px;
   color: snow;
   font-size: 2rem;

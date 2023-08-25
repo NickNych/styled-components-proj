@@ -32,8 +32,7 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
      &:hover {
        background-color: #4053cc
      }
-   `}
-  //outline
+   `} 
   ${props => props.active && css<StyledBtnPropsType>`
     box-shadow: 5px 5px 5px 5px #040d49;
   `}

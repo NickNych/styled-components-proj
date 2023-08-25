@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import styled from "styled-components";
 import {StyledBtn} from "./Components/StyledElements/Button";
+import {myTheme} from "./Components/styles/Theme.styled";
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
         <div className="App">
 
             <Box>
-                <StyledBtn btnType={"primary"}  >hello</StyledBtn>
-                <StyledBtn btnType={"outlined"} >hello</StyledBtn>
+                <StyledBtn btnType={"primary"} color={myTheme.colors.primary}  >Hello</StyledBtn>
+                <StyledBtn btnType={"outlined"} color={myTheme.colors.secondary} >Hello</StyledBtn>
                 <StyledBtn active >hello</StyledBtn>
                 {/*<input type="range"></input>*/}
             </Box>
@@ -21,7 +22,6 @@ function App() {
 export default App;
 
 const Box = styled.div`
-  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
